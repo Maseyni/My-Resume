@@ -17,38 +17,6 @@ body {
     background-color: #f9f9f9;
   }
   
-  /* .navbar {
-    background-color: #333;
-    padding: 10px 0;
-    position: fixed; /* Закрепляем панель навигации */
-    /* top: 0;
-    width: 100%; /* Растягиваем панель на всю ширину */
-    /* z-index: 1000;
-  } */ 
-  /* .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar ul li {
-    margin: 0 15px;
-  }
-  
-  .navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar ul li a:hover {
-    color: #f0a500;
-  } */
-  
-  /* Контент */
   .content--converter {
     /* flex: 1; */
     display: flex; 
@@ -88,10 +56,10 @@ h2 {
 
 /* Поле для ввода суммы */
 input[type="number"] {
-    width: 90%; /* Убедитесь, что ширина совпадает с другими блоками */
+    width: 90%; 
     padding: 10px;
     margin-bottom: 15px;
-    margin-left: 20px; /* Добавляем тот же отступ, что и у остальных элементов */
+    margin-left: 20px; 
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
@@ -107,7 +75,7 @@ input[type="number"] {
 }
 
 .search-container input {
-  display: none; /* Скрываем поле поиска по умолчанию */
+  display: none; 
   padding: 10px;
   width: 100%;
   border: 1px solid #ddd;
