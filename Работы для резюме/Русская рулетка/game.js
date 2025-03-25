@@ -15,7 +15,7 @@ const phrases = [
   const currentSurvivalDisplay = document.getElementById("currentSurvival");
   const maxSurvivalDisplay = document.getElementById("maxSurvival");
 
-  let gameOver = false; // Флаг состояния игры
+  let gameOver = false; //состояние игры
 
   // Загрузка данных из localStorage
   let currentSurvival = 0; // Текущий счетчик выживаний
