@@ -18,8 +18,6 @@ const itemList = document.getElementById('itemList');
       savedItems.forEach((itemText, index) => {
         const li = createListItem(itemText);
         itemList.appendChild(li);
-
-        // Анимация появления
         setTimeout(() => li.classList.add('appear'), index * 100);
       });
     }
@@ -55,7 +53,6 @@ const itemList = document.getElementById('itemList');
         li.classList.add('appear'); // Анимация появления
         itemList.appendChild(li);
         itemInput.value = '';
-
         updateLocalStorage();
       }
     }
