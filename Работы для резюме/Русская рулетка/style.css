@@ -17,10 +17,10 @@ body {
 
   /* Счётчики */
   #counters {
-    display: flex; /* Используем Flexbox */
-    justify-content: center; /* Выравниваем элементы по горизонтали */
-    align-items: center; /* Выравниваем элементы по вертикали */
-    gap: 20px; /* Добавляем расстояние между элементами */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #007bff;
@@ -36,11 +36,11 @@ body {
       width: 200px;
       height: 200px;
       background-color: #e2dddd;
-      background-image: url('./Ruletka.png'); /* Замените на путь вашего изображения */
-      background-size: 160% 160%; /* Растянуть по всей ширине и высоте */
+      background-image: url('./Ruletka.png'); 
+      background-size: 160% 160%; 
       background-position: center;
-      background-repeat: no-repeat; /* Отключаем повтор */
-      border-radius: 50%; /* Делаем барабан круглым */
+      background-repeat: no-repeat; 
+      border-radius: 50%; 
       display: flex;
       justify-content: center;
       align-items: center;
