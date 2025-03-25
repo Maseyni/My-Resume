@@ -49,9 +49,9 @@ function filterCurrencies(searchValue, currencySelect) {
   for (let i = 0; i < options.length; i++) {
     const option = options[i];
     if (option.text.toLowerCase().includes(query)) {
-      option.style.display = ""; // Показываем подходящие валюты
+      option.style.display = ""; 
     } else {
-      option.style.display = "none"; // Скрываем неподходящие валюты
+      option.style.display = "none"; 
     }
   }
 }
