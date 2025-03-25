@@ -41,21 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => console.error("Ошибка при загрузке списка валют:", error));
 });
 
-// Фильтр валют на основе поиска
-function filterCurrencies(searchValue, currencySelect) {
-  const options = currencySelect.options;
-  const query = searchValue.toLowerCase();
-
-  for (let i = 0; i < options.length; i++) {
-    const option = options[i];
-    if (option.text.toLowerCase().includes(query)) {
-      option.style.display = ""; 
-    } else {
-      option.style.display = "none"; 
-    }
-  }
-}
-
 // Конвертация валют
 function convert() {
   const amount = document.getElementById("amount").value;
