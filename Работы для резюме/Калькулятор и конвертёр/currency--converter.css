@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* .navbar {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed; /* Закрепляем панель навигации */
+    /* top: 0;
+    width: 100%; /* Растягиваем панель на всю ширину */
+    /* z-index: 1000;
+  } */ 
+  /* .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #f0a500;
+  } */
+  
+  /* Контент */
+  .content--converter {
+    /* flex: 1; */
+    display: flex; 
+    justify-content: center; 
+    /* align-items: center;  */
+    margin-top: 0;
+    margin-bottom: 40px; 
+  }
+  
+
+/* Контейнер для конвертера */
+.container--converter {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 350px;
+  box-sizing: border-box;
+}
+
+/* Заголовок */
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Стили для контейнера ввода валют */
+.converter {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+
+/* Поле для ввода суммы */
+input[type="number"] {
+    width: 90%; /* Убедитесь, что ширина совпадает с другими блоками */
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px; /* Добавляем тот же отступ, что и у остальных элементов */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Контейнер для поиска и выпадающего списка */
+.search-container {
+  position: relative;
+  width: 90%;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.search-container input {
+  display: none; /* Скрываем поле поиска по умолчанию */
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.currency-dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.currency-dropdown select {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  appearance: none;
+  background: #fff url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M8 10l4 4 4-4z" fill="black"/></svg>') no-repeat;
+  background-position: calc(100% - 5px) center;
+  background-size: 20px;
+  box-sizing: border-box;
+}
+
+/* Эффекты при наведении */
+.currency-dropdown select:hover {
+  background-position: calc(100% - 10px) center;
+  background-size: 30px;
+  transition: background-size 0.3s ease, background-position 0.3s ease;
+}
+
+/* Стили для кнопки */
+.btn--converter {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  background: linear-gradient(145deg, #85ffaa, #edf5ea);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn--converter:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.btn--converter:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Результат конверсии */
+#result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
