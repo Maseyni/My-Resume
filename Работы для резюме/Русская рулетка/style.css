@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s ease;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+  }
+
+  /* Счётчики */
+  #counters {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: bold;
+  }
+
+  #counters span {
+    text-align: center;
+  }
+
+  /* Круглый барабан */
+  .drum {
+      width: 200px;
+      height: 200px;
+      background-color: #e2dddd;
+      background-image: url('./Ruletka.png'); 
+      background-size: 160% 160%; 
+      background-position: center;
+      background-repeat: no-repeat; 
+      border-radius: 50%; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+
+  .drum:hover {
+    transform: scale(1.1);
+  }
+
+  /* Анимация вращения */
+  .spin {
+    animation: spin 0.5s linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg) scale(1.2);
+    }
+    to {
+      transform: rotate(360deg) scale(1.2);
+    }
+  }
+
+  /* Блок для отображения фраз */
+  #resultDisplay {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  /* Кнопка "Попробовать снова" */
+  .resetButton {
+    display: none;
+    margin-top: 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .resetButton:hover {
+    background: #0056b3;
+  }
+
+  .resetButton:active {
+    transform: scale(0.98);
+  }

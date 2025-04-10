@@ -1,0 +1,373 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Главная секция */
+
+  .hero {
+    background: url('./image/background.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .hero-content {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #d4a760;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #b58c50;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* О нас */
+
+  .about {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 3em;
+    color: #8b4513;
+  }
+  
+  .about-content p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  /* Особенности продукции */
+
+  .features h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #8b4513;
+    text-align: center; 
+  }
+  
+  .features-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    flex: 1 1 calc(33.33% - 30px);
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon-quality, .icon-design, .icon-accessibility {
+    font-size: 3em;
+    color: #8b4513;
+    margin-bottom: 15px;
+  }
+  
+  /* Галерея */
+
+  .gallery-title {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #8b4513;
+    text-align: center;
+  }
+
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .filter-buttons button {
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #d4a760;
+    color: #000;
+    transform: translateY(-2px);
+  }
+  
+  .filter-buttons button.active {
+    background-color: #d4a760;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .gallery {
+    padding: 80px 20px;
+    background-color: #fff;
+  }
+  
+  .gallery h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #8b4513;
+  }
+  
+  .gallery-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  
+  /* Отзывы */
+
+  .testimonials {
+    padding: 80px 20px;
+    background-color: #f7f2ec;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #8b4513;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+  }
+  
+  .testimonial p {
+    font-size: 1.3em;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .testimonial h4 {
+    font-size: 1em;
+    color: #8b4513;
+  }
+
+  /* Призыв присоединиться */
+
+.cta {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #8b4513, #d4a760);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f8f8f8;
+  }
+  
+  .cta p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+  
+  .cta-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .cta-form input,
+  .cta-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-form input:focus,
+  .cta-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  
+  .cta-form textarea {
+    resize: none;
+    font-size: 1.4em;
+  }
+  
+  .cta-form button {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    background: linear-gradient(135deg, #f8f8f8, #d4a760);
+    color: #8b4513;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .cta {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  
+
+  
+  /* Футер */
+
+  .footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 24px;
+    height: 24px;
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои работы для резюме</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./calculator.css">
+  <link rel="stylesheet" href="./currency--converter.css">
+  <script defer src="./calculator.js"></script>
+  <script defer src="./currency--converter.js"></script>
+</head>
+<body>
+    <div class="body--container">
+        <nav class="navbar">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#calculator">Калькулятор</a></li>
+              <li><a href="#converter">Конвертер валют</a></li>
+            </ul>
+          </nav>
+        
+          <!-- Контент страницы -->
+          <div class="conteiner">
+            <h1>Добро пожаловать на главную страницу</h1>
+            <p class="body--text">Переключайтесь между страницами с помощью панели навигации.</p>
+          </div>
+          <div class="content">
+            <div class="calculator" id="calculator">
+                <input type="text" id="display" disabled />
+                <div class="buttons">
+                  <button class="btn-calculator" onclick="appendValue('7')">7</button>
+                  <button class="btn-calculator" onclick="appendValue('8')">8</button>
+                  <button class="btn-calculator" onclick="appendValue('9')">9</button>
+                  <button class="btn-calculator" onclick="clearDisplay()">C</button>
+                  <button class="btn-calculator" onclick="appendValue('4')">4</button>
+                  <button class="btn-calculator" onclick="appendValue('5')">5</button>
+                  <button class="btn-calculator" onclick="appendValue('6')">6</button>
+                  <button class="btn-calculator" onclick="deleteLast()">⌫</button>
+                  <button class="btn-calculator" onclick="appendValue('1')">1</button>
+                  <button class="btn-calculator" onclick="appendValue('2')">2</button>
+                  <button class="btn-calculator" onclick="appendValue('3')">3</button>
+                  <button class="btn-calculator" onclick="appendValue('*')">x</button>
+                  <button class="btn-calculator" onclick="appendValue('0')">0</button>
+                  <button class="btn-calculator" onclick="appendValue('.')">.</button>
+                  <button class="btn-calculator" onclick="square()">x²</button>
+                  <button class="btn-calculator" onclick="appendValue('/')">/</button>
+                  <button class="btn-calculator" onclick="appendValue('+')">+</button>
+                  <button class="btn-calculator" onclick="appendValue('-')">-</button>
+                  <button class="btn-calculator" onclick="squareRoot()">√</button>
+                  <button class="btn-calculator" onclick="calculateResult()">=</button>
+                </div>
+              </div>
+        </div>
+        <div class="content--converter">
+            <div class="container--converter" id="converter">
+                <h2>Конвертер валют</h2>
+                <div class="converter">
+                  <!-- Поле выбора валюты "Из" -->
+                  <div class="search-container">
+                    <div class="currency-dropdown">
+                      <select id="fromCurrency"></select>
+                    </div>
+                  </div>
+                  <!-- Поле выбора валюты "В" -->
+                  <div class="search-container">
+                    <div class="currency-dropdown">
+                      <select id="toCurrency"></select>
+                    </div>
+                  </div>
+                  <input type="number" id="amount" placeholder="Введите сумму">
+                  <button class="btn--converter" onclick="convert()">Конвертировать</button>
+                </div>
+                <div id="result"></div>
+              </div>
+        </div>
+    </div>
+  
+</body>
+</html>
